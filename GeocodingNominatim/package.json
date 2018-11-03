@@ -1,0 +1,27 @@
+{
+  "name": "geocoding-nominatim",
+  "version": "1.0.0",
+  "description": "A simple project that uses ngGeolocation to get coordinates from the browser and the Nominatim API from OpenStreetMap to get a readable address.",
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/Rick-1990/AngularTries/GeocodingNominatim"
+  },
+  "main": "app/app.js",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "ngGeolocation": "0.0.7",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./ -p 8080 -o http://127.0.0.1:8080",
+    "test": "echo \"No tests provided.\" && exit 1"
+  },
+  "author": "Riccardo Cannella",
+  "license": "GPL-3.0-only"
+}

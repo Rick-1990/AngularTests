@@ -1,0 +1,15 @@
+<section class="pt-5 pb-3 bg-light">
+    <div class="container">
+        <h1>Geocoding with AngularJS, ngGeolocation and Nominatim</h1>
+        <p>
+            This project relies on:
+            <ul class="list-unstyled">
+                <li ng-repeat="item in $ctrl.const">
+                    <a href="{{item.url}}" target="_blank">{{item.name}}</a>, {{item.descr}}
+                </li>
+            </ul>
+        </p>
+        <p>I focused on the Nominatim API because it is open source and can be installed on a server, be it personal or on an enterprise server farm, so you don't have to pay for services like the Google Geolocation API or others, even for large amounts of requests.</p>
+    </div>
+</section>
+<geolocation-component></geolocation-component>

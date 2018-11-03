@@ -1,0 +1,49 @@
+<div class="py-2 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2>First things first</h2>
+                <p>Click the following button to get your current location's coordinates.</p>
+                <div class="form-group">
+                    <input class="form-control" type="button" ng-click="$ctrl.getCoords()" value="Get coordinates" />
+                </div>
+
+                <div ng-if="$ctrl.positionAcquired === true">
+                    <div class="alert alert-success" role="alert">
+                        <h3>Got your coordinates!</h3>
+                        <p>Latitude: {{$ctrl.position.coords.latitude}},<br>
+                            Longitude: {{$ctrl.position.coords.longitude}}</p>
+                    </div>
+
+                    <div class="alert alert-warning" role="alert">
+                        <p>Warining: these coordinates could be quite off, for example if your device does not have a
+                            GPS
+                            sensor and your ISP is a mobile carrier or if it puts your ip under NAT. It is just how
+                            HTML5
+                            geolocation works.</p>
+                        <p>For more informations, you can read <a href="http://www.andygup.net/html5-geolocation-api-%E2%80%93-how-accurate-is-it-really/"
+                                target="_blank">this article</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" ng-if="$ctrl.positionAcquired === true">
+                <h2>Second things second</h2>
+                <p>Click the following button to convert those coordinates into a human readable address.</p>
+                <div class="form-group">
+                    <input class="form-control" type="button" ng-click="$ctrl.getHumanReadablePosition()" value="Get human readable position" />
+                </div>
+                <div ng-if="$ctrl.hasHumanReadablePosition === true">
+                    <div class="alert alert-success" role="alert">
+                        <h3>Got a human readable position!</h3>
+                        <p>City: {{$ctrl.humaReadablePosition.data.address.city}}</p>
+                        <p>County: {{$ctrl.humaReadablePosition.data.address.county}}</p>
+                        <p>State: {{$ctrl.humaReadablePosition.data.address.state}}</p>
+                        <p>Postcode: {{$ctrl.humaReadablePosition.data.address.postcode}}</p>
+                        <p>Country: {{$ctrl.humaReadablePosition.data.address.country}}</p>
+                        <!--<pre>{{$ctrl.humaReadablePosition.data.address | json}}</pre>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
