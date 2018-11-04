@@ -1,6 +1,8 @@
 # Angular Tests
 This is my personal basket of tests with AngularJS and Angular6-7.
 
+For a description of what they do, refer to their own READMEs found in their folders.
+
 # 
 ## Prerequisites
 This series of projects runs with NodeJs, which has to be installed on your machine, or you have to start a webserver of your choice pointing to this directory as the wwwroot.
