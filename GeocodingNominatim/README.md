@@ -19,7 +19,7 @@ git clone https://github.com/Rick-1990/AngularTests/
 ```
 Get into the project folder
 ```
-cd GeocodingNominatim
+cd AngularTests
 ```
 Run with npm
 ```
