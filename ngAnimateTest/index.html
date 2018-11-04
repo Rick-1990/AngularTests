@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>Angular Tests</title>
+    <title>Animation of DOM elements with ngAnimate</title>
     <!--BOOTSTRAP CSS-->
     <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="app/app.css" />
     <!--THIRD PARTY MODULES-->
     <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
     <!--APP MODULES AND COMPONENTS-->
-    <script src="angularTests.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/mainComponent/main.component.js"></script>
+    <script src="app/components/animationsComponent/animations.component.js"></script>
 </head>
 
-<body ng-app="angularTests" ng-controller="MainController as $ctrl">
+<body ng-app="ngAnimateApp">
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
@@ -48,37 +52,7 @@
         </div>
     </header>
     <main role="main">
-        <section class="pt-5 pb-3 bg-light">
-            <div class="container">
-                <h1>Angular Tests</h1>
-                <p>This is the list of projects and tests in this repository. Each of them is a standalone project
-                    with its own package.json, so they can be run from here or standalone, just copy the folder of the
-                    single project and run npm start from there.</p>
-            </div>
-        </section>
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" ng-repeat="item in $ctrl.list">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header bg-dark text-white">
-                                <h3>{{item.name}}</h3>
-                            </div>
-                            <!--<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                        alt="Card image cap"> -->
-                            <div class="card-body">
-                                <p class="card-text">{{item.description}}</p>
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary" href="{{item.url}}">View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <main-component></main-component>
     </main>
     <footer class="text-muted">
         <div class="container">

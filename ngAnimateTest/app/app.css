@@ -1,0 +1,39 @@
+.mainAnimation.ng-enter
+ {
+    transition: all ease-in 0.5s;
+    max-height: 0px;
+}
+   
+.mainAnimation.ng-enter.ng-enter-active{
+    max-height: 400px;
+}
+.mainAnimation.ng-leave
+{
+    transition:all ease-out 0.5s;
+    max-height: 400px;
+}
+   
+.mainAnimation.ng-leave.ng-leave-active
+{
+    max-height: 0px;
+}
+.mainAnimation{
+    max-height: 400px;
+}
+
+
+
+.mainAnimation.ng-enter>*{
+    transition: all ease-in 1s;
+    opacity: 0;
+}
+.mainAnimation.ng-enter.ng-enter-active>*{
+    opacity: 1;
+}
+.mainAnimation.ng-leave>*{
+    transition:all ease-out 0.2s;
+    opacity: 1;
+}
+.mainAnimation.ng-leave.ng-leave-active>*{
+    opacity: 0;
+}

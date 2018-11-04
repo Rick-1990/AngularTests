@@ -1,0 +1,15 @@
+<section class="pt-5 pb-3 bg-light">
+    <div class="container">
+        <h1>ngAnimate Test</h1>
+        <p>
+            This project relies on:
+            <ul class="list-unstyled">
+                <li ng-repeat="item in $ctrl.const">
+                    <a href="{{item.url}}" target="_blank">{{item.name}}</a>, {{item.descr}}
+                </li>
+            </ul>
+        </p>
+        <p>I'm just trying to figure out how ngAnimate works, so I'll animate some stuff.</p>
+    </div>
+</section>
+<animations-component></animations-component>

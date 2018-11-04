@@ -6,6 +6,11 @@ angularTestsApp.constant('appList',{
             name: "GeocodingNominatim",
             description: "Reverse geocoding with ngGeolocation and Nominatim",
             url: "/GeocodingNominatim/"
+        },
+        {
+            name: "ngAnimateTest",
+            description: "Several ngAnimate tests with every component that came to my mind",
+            url: "/ngAnimateTest/"
         }
     ]
 });
