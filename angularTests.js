@@ -4,7 +4,7 @@ angularTestsApp.constant('appList',{
     list: [
         {
             name: "GeocodingNominatim",
-            description: "Reverse geocoding with ngGeocoloation and Nominatim",
+            description: "Reverse geocoding with ngGeolocation and Nominatim",
             url: "/GeocodingNominatim/"
         }
     ]
