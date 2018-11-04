@@ -15,7 +15,7 @@ This project runs with NodeJs, which has to be installed on your machine, or you
 ## Running
 Clone this repo:
 ```
-git clone https://github.com/Rick-1990/AngularTests/GeocodingNominatim/
+git clone https://github.com/Rick-1990/AngularTests/
 ```
 Get into the project folder
 ```
@@ -25,5 +25,6 @@ Run with npm
 ```
 npm start
 ```
+Select "GeocodingNominatim" from the list to view this demo
 # License
 This repository is licensed under the terms of the GNU GPLv3 license. You may read the full terms in the [LICENSE file](../LICENSE)
